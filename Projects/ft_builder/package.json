@@ -1,0 +1,45 @@
+{
+  "name": "ft-builder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack -p 3211",
+    "build": "next build",
+    "start": "next start -p 3211",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "db:setup": "mysql -u $DB_USER -p$DB_PASSWORD -h $DB_HOST $DB_NAME < database/schema.sql"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^2.6.0",
+    "@anthropic-ai/sdk": "^0.86.1",
+    "@langchain/core": "^1.1.39",
+    "@langchain/langgraph": "^1.2.8",
+    "@langchain/openai": "^1.4.3",
+    "@monaco-editor/react": "^4.7.0",
+    "@octokit/core": "^7.0.2",
+    "@octokit/rest": "^22.0.0",
+    "antd": "^5.26.4",
+    "better-sqlite3": "^12.8.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^17.1.0",
+    "mysql2": "^3.14.1",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "typescript": "^5"
+  }
+}
