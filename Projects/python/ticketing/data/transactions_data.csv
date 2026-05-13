@@ -1,0 +1,5 @@
+transaction_id,user_id,account_id,amount,transaction_type,merchant,timestamp
+t1001,1,5230212689541666174,120.5,purchase,Grocery Store,2023-04-15 14:23:45
+t1002,1,5230212689541666174,50.25,withdrawal,ATM,2023-04-14 10:45:22
+t1003,2,9876543210123456,1000.0,deposit,Bank Transfer,2023-04-13 16:30:00
+t1004,3,1234567890123456,85.43,purchase,Gas Station,2023-04-12 09:15:18

@@ -1,0 +1,11 @@
+account_id,component,api_name,response_message,pmt_action,currency_code,biz_api_name,processor_norm_response_code,business_application,downstream_error_desc,payments_acceptance_solution_category,payments_schedule,card_network,payments_acceptance_solution,account_country,txn_status
+1037652489012345678,Payments,PaymentsAPI,Success,AUTHORIZE,USD,CreateOrder,00,ECOMMERCE,None,DIGITAL,ONE_TIME,VISA,Website,US,COMPLETED
+2048576912345678901,Risk,PayPalCheckout,Declined,CAPTURE,EUR,ExecutePayment,51,RETAIL,Insufficient funds,OMNICHANNEL,RECURRING,MASTERCARD,POS,DE,DECLINED
+3098761452345678902,Checkout,BillingAgreements,Processing,AUTHORIZE,GBP,CreateBillingAgreement,85,DIGITAL_GOODS,Verification required,DIGITAL,SUBSCRIPTION,AMEX,Mobile,UK,PENDING
+4102938475612345678,Fraud,PaymentTokens,Rejected,AUTHORIZE,CAD,CreatePaymentToken,05,MARKETPLACE,Do not honor,DIGITAL,ONE_TIME,DISCOVER,Website,CA,DECLINED
+5123456789012345678,Gateway,PayPalStandard,Success,CAPTURE,USD,DoDirectPayment,00,SERVICES,None,OMNICHANNEL,INSTALLMENT,VISA,Website,US,COMPLETED
+1037652489012345678,Identity,PaymentsV2,Reversed,REFUND,USD,RefundCapture,00,ECOMMERCE,Customer request,DIGITAL,ONE_TIME,MASTERCARD,Website,US,COMPLETED
+2048576912345678901,Processor,BraintreeAPI,Error,AUTHORIZE,JPY,Sale,13,RETAIL,Invalid amount,INSTORE,ONE_TIME,JCB,POS,JP,ERROR
+3098761452345678902,Risk,PayPalExpress,Hold,CAPTURE,AUD,DoExpressCheckout,91,DIGITAL_GOODS,Issuer unavailable,DIGITAL,SUBSCRIPTION,VISA,Mobile,AU,PENDING
+4102938475612345678,Checkout,SubscriptionsAPI,Declined,CAPTURE,MXN,CreateSubscription,61,MARKETPLACE,Exceeds withdrawal limit,DIGITAL,RECURRING,MASTERCARD,Website,MX,DECLINED
+5123456789012345678,Payments,OrdersAPI,Success,AUTHORIZE,BRL,CreateOrder,00,SERVICES,None,DIGITAL,ONE_TIME,ELO,Website,BR,COMPLETED

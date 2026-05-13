@@ -1,0 +1,155 @@
+[
+  {
+    "incident_id": 1,
+    "incident_type": "P1",
+    "incident_description": "Credit card transactions failing for customers in Russia",
+    "relevant_fields": {
+      "user": [
+        "country"
+      ],
+      "account": [
+        "card_type",
+        "account_type"
+      ],
+      "transaction": [
+        "transaction_channel",
+        "transaction_status"
+      ]
+    },
+    "relevant_values": {
+      "country": "Russia",
+      "card_type": "Credit Card",
+      "transaction_status": "Failed",
+      "transaction_channel": "Online"
+    }
+  },
+  {
+    "incident_id": 2,
+    "incident_type": "P1",
+    "incident_description": "Business customers unable to access corporate accounts in Russia",
+    "relevant_fields": {
+      "user": [
+        "country",
+        "user_group"
+      ],
+      "account": [
+        "account_type",
+        "card_type"
+      ],
+      "transaction": [
+        "transaction_type"
+      ]
+    },
+    "relevant_values": {
+      "country": "Russia",
+      "user_group": "Business",
+      "account_type": "Corporate"
+    }
+  },
+  {
+    "incident_id": 3,
+    "incident_type": "P2",
+    "incident_description": "Business customers reporting incorrect balance after international transfers",
+    "relevant_fields": {
+      "user": [
+        "user_group"
+      ],
+      "account": [
+        "account_type"
+      ],
+      "transaction": [
+        "transaction_type",
+        "transaction_status"
+      ]
+    },
+    "relevant_values": {
+      "user_group": "Business",
+      "account_type": "Checking",
+      "transaction_type": "Transfer",
+      "transaction_status": "Completed"
+    }
+  },
+  {
+    "incident_id": 4,
+    "incident_type": "P1",
+    "incident_description": "Mobile app authentication failing for Russia users",
+    "relevant_fields": {
+      "user": [
+        "country"
+      ],
+      "account": [
+        "account_status"
+      ],
+      "transaction": [
+        "transaction_channel"
+      ]
+    },
+    "relevant_values": {
+      "country": "Russia",
+      "account_status": "Active",
+      "transaction_channel": "Mobile App"
+    }
+  },
+  {
+    "incident_id": 5,
+    "incident_type": "P2",
+    "incident_description": "Duplicate card charges for Russia retail transactions",
+    "relevant_fields": {
+      "user": [
+        "country"
+      ],
+      "account": [
+        "card_type",
+        "card_status"
+      ],
+      "transaction": [
+        "transaction_type",
+        "transaction_subtype"
+      ]
+    },
+    "relevant_values": {
+      "country": "Russia",
+      "card_type": "Credit Card",
+      "transaction_type": "Purchase",
+      "transaction_subtype": "Retail"
+    }
+  },
+  {
+    "incident_id": 6,
+    "incident_type": "P2",
+    "incident_description": "External Transfer (Crypto Withdrawal) pending in status and broadcasted",
+    "relevant_fields": {
+      "transaction": [
+        "payment_type",
+        "payment_action",
+        "transaction_status",
+        "asset_symbol"
+      ]
+    },
+    "relevant_values": {
+      "payment_type": "Crypto",
+      "payment_action": "Withdrawal",
+      "transaction_status": "Pending",
+      "asset_symbol": "BCH/SOL (Bitcoin Cash/Solana)"
+    }
+  },
+  {
+    "incident_id": 7,
+    "incident_type": "P2",
+    "incident_description": "Cryptocurrency withdrawal transaction pending status with Bitcoin",
+    "relevant_fields": {
+      "transaction": [
+        "transaction_type",
+        "transaction_subtype",
+        "transaction_status",
+        "merchant_name"
+      ]
+    },
+    "relevant_values": {
+      "transaction_type": "Crypto",
+      "transaction_subtype": "Withdrawal",
+      "transaction_status": "Pending",
+      "merchant_name": "Bitcoin"
+    }
+  }
+]

@@ -1,0 +1,6 @@
+user_id,user_email,country,user_group,limitation
+5230212689541666174,user1@example.com,US,Personal,
+4398172456903218765,user2@example.com,Canada,Business,
+7612093845217634980,user3@example.com,UK,Premium,
+9023148756321047896,user4@example.com,Germany,Personal,
+2134567890123456789,user5@example.com,France,Business,

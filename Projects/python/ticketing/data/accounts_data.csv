@@ -1,0 +1,4 @@
+account_id,user_id,account_type,balance,currency,status
+5230212689541666174,1,checking,1500.0,USD,active
+9876543210123456,2,savings,25000.0,USD,active
+1234567890123456,3,credit,-450.75,USD,active

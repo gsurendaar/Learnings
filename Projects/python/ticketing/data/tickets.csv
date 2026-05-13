@@ -1,0 +1,4 @@
+ticket_id,title,description,resolution,resource_link
+1,Password Reset,User cannot reset password via link,Reset link was expired. Generated new password reset token and sent fresh email. Advised user to complete reset within 24 hours.,https://support.example.com/kb/password-reset-guide
+2,Account Locked,Account locked after multiple failed login attempts,Verified identity and unlocked account. Reset password and enabled two-factor authentication.,https://support.example.com/kb/account-security
+3,Suspicious Transaction,Customer reports unauthorized transaction on their account,"Investigated transaction and confirmed it was fraudulent. Reversed charge, froze account, and issued new card.",https://support.example.com/kb/fraud-protection
